@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Dressage and horsemanship for the age of intelligence. Research, ethics, and the future of horse sport — built on what we now know about horse cognition, welfare, and consent.">
+<meta property="og:title" content="Dressage for the Future | Embrace Ethical Dressage Today">
+<meta property="og:description" content="Dressage and horsemanship for the age of intelligence. Research, ethics, and the future of horse sport — built on what we now know about horse cognition, welfare, and consent.">
+<meta property="og:url" content="https://www.dressageforthefuture.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Dressage for the Future">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Dressage for the Future | Embrace Ethical Dressage Today">
+<meta name="twitter:description" content="Dressage and horsemanship for the age of intelligence. Research, ethics, and the future of horse sport — built on what we now know about horse cognition, welfare, and consent.">
+<link rel="canonical" href="https://www.dressageforthefuture.com/">
+<title>Dressage for the Future | Embrace Ethical Dressage Today</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Cinzel:wght@400;600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cream: #F5F0E8;
+    --cream-dark: #EDE7D9;
+    --forest: #1E3A2B;
+    --forest-mid: #2D5040;
+    --forest-light: #3D6B52;
+    --gold: #B8933A;
+    --gold-light: #D4AB55;
+    --gold-pale: #E8D4A0;
+    --ink: #1A1A18;
+    --ink-soft: #3A3830;
+    --mist: #8A8578;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--cream);
+    color: var(--ink);
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 18px;
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+
+  /* NAV */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    background: var(--forest);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3rem;
+    height: 62px;
+    border-bottom: 2px solid var(--gold);
+  }
+  .nav-logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.15rem;
+    font-weight: 300;
+    letter-spacing: 0.06em;
+    color: var(--cream);
+    text-decoration: none;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    align-items: center;
+    margin-left: 2rem;
+  }
+  .nav-links a {
+    font-family: 'Cinzel', serif;
+    font-size: 0.6rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold-pale);
+    text-decoration: none;
+    white-space: nowrap;
+    transition: color 0.3s;
+  }
+  .nav-links a:hover { color: var(--gold-light); }
+  .nav-contact { color: var(--gold) !important; border-bottom: 1px solid var(--gold); padding-bottom: 2px; }
+
+  /* BUTTONS */
+  .btn-primary {
+    font-family: 'Cinzel', serif;
+    font-size: 0.6rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    padding: 1rem 2.5rem;
+    background: var(--forest);
+    color: var(--gold-pale);
+    text-decoration: none;
+    border: 1px solid var(--forest);
+    transition: all 0.3s;
+    display: inline-block;
+  }
+  .btn-primary:hover { background: var(--forest-mid); border-color: var(--gold); color: var(--gold-light); }
+  .btn-secondary {
+    font-family: 'Cinzel', serif;
+    font-size: 0.6rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    padding: 1rem 2.5rem;
+    background: transparent;
+    color: var(--forest);
+    text-decoration: none;
+    border: 1px solid var(--forest);
+    transition: all 0.3s;
+    display: inline-block;
+  }
+  .btn-secondary:hover { background: var(--forest); color: var(--gold-pale); }
+
+  /* GOLD RULE */
+  .gold-rule { height: 1px; background: linear-gradient(to right, transparent, var(--gold), transparent); }
+
+  /* HERO */
+  .hero { background-image: url("images/leo-canberra-2.jpg"); background-size: cover; background-position: center 60%; background-blend-mode: multiply;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8rem 8% 6rem;
+    background: var(--cream);
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    right: 0; top: 0;
+    width: 45%;
+    height: 100%;
+    background: var(--forest);
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+    opacity: 0.06;
+    pointer-events: none;
+  }
+  .hero-overline {
+    font-family: 'Cinzel', serif;
+    font-size: 0.62rem;
+    letter-spacing: 0.28em;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+  }
+  .hero h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2.8rem, 5.5vw, 5rem);
+    font-weight: 300;
+    line-height: 1.12;
+    color: var(--forest);
+    max-width: 720px;
+    margin-bottom: 2rem;
+  }
+  .hero h1 em { font-style: italic; color: var(--gold); }
+  .hero-body {
+    font-size: 1.1rem;
+    line-height: 1.85;
+    max-width: 540px;
+    color: var(--ink-soft);
+    margin-bottom: 3rem;
+  }
+  .hero-ctas { display: flex; gap: 1.5rem; flex-wrap: wrap; }
+  .hero-rule { width: 60px; height: 2px; background: var(--gold); margin-top: 3rem; }
+
+  /* PULL QUOTE */
+  .intro-quote {
+    background: var(--forest);
+    padding: 5rem 8%;
+    text-align: center;
+  }
+  .intro-quote blockquote {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.3rem, 2.2vw, 1.9rem);
+    font-weight: 300;
+    font-style: italic;
+    color: var(--gold-pale);
+    max-width: 820px;
+    margin: 0 auto;
+    line-height: 1.65;
+  }
+  .intro-quote cite {
+    display: block;
+    font-family: 'Cinzel', serif;
+    font-size: 0.58rem;
+    letter-spacing: 0.22em;
+    color: var(--gold);
+    margin-top: 1.5rem;
+    font-style: normal;
+  }
+
+  /* FORK */
+  .fork-section {
+    display: grid;
+    grid-template-columns: 1fr 1px 1fr;
+    min-height: 420px;
+  }
+  .fork-divider { background: linear-gradient(to bottom, transparent, var(--gold), transparent); }
+  .fork-panel { padding: 4.5rem 5%; }
+  .fork-panel.dark { background: var(--forest); }
+  .fork-panel.light { background: var(--cream); }
+  .panel-tag {
+    font-family: 'Cinzel', serif;
+    font-size: 0.58rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1.5rem;
+    display: block;
+  }
+  .fork-panel h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.9rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+    line-height: 1.25;
+  }
+  .fork-panel.dark h3 { color: var(--cream); }
+  .fork-panel.light h3 { color: var(--forest); }
+  .fork-panel p { font-size: 1rem; line-height: 1.8; margin-bottom: 0.8rem; }
+  .fork-panel.dark p { color: var(--gold-pale); opacity: 0.85; }
+  .fork-panel.light p { color: var(--ink-soft); }
+  .fork-link {
+    display: inline-block;
+    margin-top: 1.5rem;
+    font-family: 'Cinzel', serif;
+    font-size: 0.58rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-bottom: 3px;
+    border-bottom: 1px solid;
+    transition: opacity 0.3s;
+  }
+  .fork-panel.dark .fork-link { color: var(--gold); border-color: var(--gold); }
+  .fork-panel.light .fork-link { color: var(--forest); border-color: var(--forest); }
+  .fork-link:hover { opacity: 0.6; }
+
+  /* ON THIS SITE */
+  .site-map { background: var(--cream-dark); padding: 5rem 8%; }
+  .section-label {
+    font-family: 'Cinzel', serif;
+    font-size: 0.58rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1.2rem;
+    display: block;
+  }
+  .section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.8rem, 3vw, 2.8rem);
+    font-weight: 300;
+    line-height: 1.2;
+    color: var(--forest);
+    margin-bottom: 1.5rem;
+  }
+  .section-title em { font-style: italic; color: var(--gold); }
+  .site-map-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  .site-map-category { padding: 1.5rem; border-top: 2px solid var(--gold); }
+  .site-map-category h4 {
+    font-family: 'Cinzel', serif;
+    font-size: 0.58rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1rem;
+  }
+  .site-map-category ul { list-style: none; }
+  .site-map-category li { margin-bottom: 0.6rem; }
+  .site-map-category a { font-size: 1rem; color: var(--forest); text-decoration: none; transition: color 0.3s; }
+  .site-map-category a:hover { color: var(--gold); }
+
+  /* IMAGE FEATURE */
+  .image-feature { display: grid; grid-template-columns: 1fr 1fr; min-height: 500px; }
+  .image-feature-img { overflow: hidden; background: var(--forest-mid); }
+  .image-feature-img img { width: 100%; height: 100%; object-fit: cover; display: block; filter: sepia(15%) contrast(1.05); }
+  .image-feature-text {
+    background: var(--forest);
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.2rem;
+  }
+  .image-feature-text h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--cream);
+    line-height: 1.3;
+  }
+  .image-feature-text p { color: var(--gold-pale); opacity: 0.85; font-size: 1rem; line-height: 1.8; }
+
+  /* THE FUTURE */
+  .future-section { padding: 5rem 8%; background: var(--cream); }
+  .future-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; margin-top: 3rem; align-items: start; }
+  .future-text p { color: var(--ink-soft); margin-bottom: 1.2rem; font-size: 1.05rem; }
+  .future-pillars { display: flex; flex-direction: column; gap: 1.5rem; }
+  .pillar { border-left: 2px solid var(--gold); padding-left: 1.5rem; }
+  .pillar h4 { font-family: 'Cormorant Garamond', serif; font-size: 1.15rem; font-weight: 400; color: var(--forest); margin-bottom: 0.3rem; }
+  .pillar h4 a { text-decoration: none; color: inherit; border-bottom: 1px solid var(--gold); padding-bottom: 1px; transition: color 0.3s; }
+  .pillar h4 a:hover { color: var(--gold); }
+  .pillar p { font-size: 0.92rem; color: var(--mist); line-height: 1.6; }
+
+  /* BLOG */
+  .resources { background: var(--forest); padding: 5rem 8%; }
+  .resources .section-title { color: var(--cream); }
+  .resources-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 2px; margin-top: 3rem; }
+  .resource-card { background: var(--forest-mid); padding: 2.5rem; text-decoration: none; display: block; transition: background 0.3s; }
+  .resource-card:hover { background: var(--forest-light); }
+  .card-tag { font-family: 'Cinzel', serif; font-size: 0.55rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; display: block; }
+  .resource-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; font-weight: 300; color: var(--cream); line-height: 1.3; margin-bottom: 0.8rem; }
+  .resource-card p { font-size: 0.9rem; color: var(--gold-pale); opacity: 0.7; line-height: 1.6; }
+  .card-arrow { display: inline-block; margin-top: 1.5rem; font-size: 1.1rem; color: var(--gold); transition: transform 0.3s; }
+  .resource-card:hover .card-arrow { transform: translateX(6px); }
+
+  /* FOOTER */
+  footer { background: var(--ink); padding: 4rem 8% 2.5rem; }
+  .footer-top { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; padding-bottom: 2.5rem; border-bottom: 1px solid rgba(184,147,58,0.25); margin-bottom: 2rem; }
+  .footer-brand h2 { font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; font-weight: 300; color: var(--cream); margin-bottom: 1rem; }
+  .footer-brand p { font-size: 0.95rem; color: var(--mist); line-height: 1.7; max-width: 400px; }
+  .footer-contact { color: var(--gold); text-decoration: none; font-family: 'Cinzel', serif; font-size: 0.62rem; letter-spacing: 0.18em; text-transform: uppercase; border-bottom: 1px solid var(--gold); padding-bottom: 2px; display: inline-block; margin-top: 1.2rem; }
+  .footer-nav h4 { font-family: 'Cinzel', serif; font-size: 0.58rem; letter-spacing: 0.2em; color: var(--gold); text-transform: uppercase; margin-bottom: 1.2rem; }
+  .footer-nav ul { list-style: none; }
+  .footer-nav li { margin-bottom: 0.6rem; }
+  .footer-nav a { font-size: 0.95rem; color: var(--mist); text-decoration: none; transition: color 0.3s; }
+  .footer-nav a:hover { color: var(--gold-pale); }
+  .footer-bottom { display: flex; justify-content: space-between; font-size: 0.75rem; color: var(--mist); font-family: 'Cinzel', serif; letter-spacing: 0.1em; opacity: 0.5; }
+
+  /* RESPONSIVE */
+  @media (max-width: 1024px) { .nav-links { gap: 1.4rem; } .nav-links a { font-size: 0.55rem; } }
+  @media (max-width: 800px) {
+    nav { padding: 0 1.5rem; }
+    .nav-links { display: none; }
+    #home { grid-template-columns: 1fr !important; min-height: auto !important; }
+    #home > div:last-child { min-height: 60vw; clip-path: none !important; }
+    #home > div:first-child { padding: 5rem 6% 3rem !important; }
+    .site-map, .future-section, .resources { padding: 4rem 6%; }
+    .fork-section { grid-template-columns: 1fr; }
+    .fork-divider { display: none; }
+    .image-feature { grid-template-columns: 1fr; }
+    .image-feature-img { min-height: 280px; }
+    .image-feature-text { padding: 3rem 6%; }
+    .future-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+    .footer-top { grid-template-columns: 1fr; gap: 2.5rem; }
+    .footer-bottom { flex-direction: column; gap: 0.5rem; }
+  }
+</style>
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#home" class="nav-logo">Dressage For the Future</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="how-we-got-here.html">How We Got Here</a></li>
+    <li><a href="the-future.html">The Future</a></li>
+    <li class="nav-dropdown">
+      <a href="the-book.html">The Book ▾</a>
+      <ul class="nav-dropdown-menu">
+        <li><a href="the-book.html">About the Book</a></li>
+        <li><a href="book-preface.html">Preface</a></li>
+        <li><a href="book-ch1.html">Ch 1 · Before the Contact</a></li>
+        <li><a href="book-ch2.html">Ch 2 · The Great Contradiction</a></li>
+        <li><a href="book-ch3.html">Ch 3 · The Military Machine</a></li>
+        <li><a href="book-ch4.html">Ch 4 · One Hand to Two</a></li>
+        <li><a href="book-ch5.html">Ch 5 · The Kür</a></li>
+        <li><a href="book-ch6.html">Ch 6 · The Silenced Mouth</a></li>
+        <li><a href="book-ch7.html">Ch 7 · Descartes' Horse</a></li>
+        <li><a href="book-ch8.html">Ch 8 · The Physics</a></li>
+        <li><a href="book-ch9.html">Ch 9 · Totilas</a></li>
+        <li><a href="book-ch10.html">Ch 10 · Sjef Janssen</a></li>
+        <li><a href="book-ch11.html">Ch 11 · The Bit Is the System</a></li>
+        <li><a href="book-ch12.html">Ch 12 · The Halter and the Paddock</a></li>
+        <li><a href="book-ch13.html">Ch 13 · What the Dutch Know</a></li>
+        <li><a href="book-ch14.html">Ch 14 · What Institutions Protect</a></li>
+        <li><a href="book-ch15.html">Ch 15 · Hawkeye for Horses</a></li>
+        <li><a href="book-epilogue.html">Epilogue · Leo</a></li>
+      </ul>
+    </li>
+    <li><a href="future-of-dressage.html">Future of Dressage</a></li>
+    <li><a href="https://substack.com/@dressageforthefuture" target="_blank" rel="noopener">Blog</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html" class="nav-contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="home" style="display:grid;grid-template-columns:1fr 1fr;min-height:90vh;background:var(--cream);">
+  <!-- Left: text -->
+  <div style="padding:8rem 6% 6rem 8%;display:flex;flex-direction:column;justify-content:center;background:var(--cream);">
+    <span class="hero-overline" style="color:var(--forest);opacity:0.6;">Embrace Ethical Dressage Today</span>
+    <h1 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2.8rem,4vw,4.5rem);font-weight:300;color:var(--forest);line-height:1.1;margin:1.5rem 0;">Dressage and Horsemanship for <em style="color:var(--gold);font-style:italic;">the age of intelligence</em></h1>
+    <p style="font-family:'EB Garamond',serif;font-size:1.1rem;color:var(--ink);opacity:0.8;line-height:1.8;max-width:480px;margin-bottom:2.5rem;">We now understand that horses are cognitively complex, socially attuned, and neurologically sensitive animals. They are not reflex machines. They are decision-making organisms. The question is no longer how to make the horse comply — it is how to engage the horse's mind.</p>
+    <div class="hero-ctas">
+      <a href="the-future.html" class="btn-primary">Explore the Research</a>
+      <a href="blog.html" class="btn-secondary">Read the Blog</a>
+    </div>
+  </div>
+  <!-- Right: tunnel image -->
+  <div style="position:relative;overflow:hidden;clip-path:polygon(8% 0%, 100% 0%, 100% 100%, 0% 100%);">
+    <img src="images/leo-tunnel.jpg" alt="Leo in the tunnel — light ahead" style="width:100%;height:100%;object-fit:cover;object-position:center;display:block;">
+  </div>
+</section>
+
+<div class="gold-rule"></div>
+
+<!-- PULL QUOTE -->
+<div class="intro-quote">
+  <blockquote>"If we attempt to build an ethical competition framework on unethical foundations, dressage risks losing its social licence to operate."</blockquote>
+  <cite>— Dressage for the Future</cite>
+</div>
+
+<div class="gold-rule"></div>
+
+<!-- FORK -->
+<div class="fork-section" id="how-we-got-here">
+  <div class="fork-panel dark">
+    <span class="panel-tag">Where We Came From</span>
+    <h3>The Historical Foundation</h3>
+    <p>For centuries, dressage rested on a single premise: that horses could be shaped through repetition, pressure, and physical compliance. The training systems built on this foundation were sophisticated — but they were built on a misunderstanding of what horses actually are.</p>
+    <p>Before we understood sentience, before we understood the neuroscience of stress and learning, trainers relied on what they could observe. Now we know more.</p>
+    <a href="before-sentience.html" class="fork-link">The False Premise &rarr;</a>
+  </div>
+  <div class="fork-divider"></div>
+  <div class="fork-panel light">
+    <span class="panel-tag">Where We Are Going</span>
+    <h3>A New Framework</h3>
+    <p>Dressage now stands at a fork in the road. One path continues the tradition of compliance-based training. The other asks harder questions — about consent, about cooperation, about what it means for a horse to participate willingly in the work.</p>
+    <p>Understanding how we got here is important. The future depends on it.</p>
+    <a href="the-future.html" class="fork-link">The Future of Dressage &rarr;</a>
+  </div>
+</div>
+
+<div class="gold-rule"></div>
+
+<!-- ON THIS SITE -->
+<section class="site-map">
+  <span class="section-label">On This Site</span>
+  <h2 class="section-title">Explore the Ideas</h2>
+  <div class="site-map-grid">
+    <div class="site-map-category">
+      <h4>How We Got Here</h4>
+      <ul>
+        <li><a href="before-sentience.html">If He Only Had a Brain</a></li>
+        <li><a href="when-dressage-changed.html">When Dressage Changed</a></li>
+      </ul>
+    </div>
+    <div class="site-map-category">
+      <h4>The Future</h4>
+      <ul>
+        <li><a href="her-mouth.html">Her Mouth, Not Ours</a></li>
+        <li><a href="aids-and-cues.html">Aids and Cues</a></li>
+        <li><a href="the-day-i-took-the-bit-out.html">The Day I Took the Bit Out</a></li>
+      </ul>
+    </div>
+    <div class="site-map-category">
+      <h4>The Future</h4>
+      <ul>
+        <li><a href="no-hard-mouth.html">No Such Thing as a Hard Mouth</a></li>
+        <li><a href="rewriting-the-rules.html">Rewriting the Rules</a></li>
+      </ul>
+    </div>
+    <div class="site-map-category">
+      <h4>Join the Conversation</h4>
+      <ul>
+        <li><a href="blog.html">Read the Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="gold-rule"></div>
+
+<!-- IMAGE FEATURE -->
+<div class="image-feature">
+  <div class="image-feature-img">
+    <img src="images/horses-sleeping.jpg"
+         alt="Horses sleeping in a field — freedom, trust, and natural behaviour"
+         style="width:100%;height:100%;object-fit:cover;">
+  </div>
+  <div class="image-feature-text">
+    <span class="section-label">The Horse's Perspective</span>
+    <h2>Engagement, not compliance</h2>
+    <p>The question has shifted. We no longer ask: how do we make the horse do this? We ask: how do we invite the horse to participate?</p>
+    <p>Horses are decision-making organisms. The future of dressage acknowledges this — and builds its methods accordingly.</p>
+    <a href="the-future.html" class="btn-primary" style="align-self:flex-start">Explore the Research</a>
+  </div>
+</div>
+
+<div class="gold-rule"></div>
+
+<!-- THE FUTURE -->
+<section class="future-section" id="the-future">
+  <span class="section-label">The Future</span>
+  <h2 class="section-title">What <em>ethical dressage</em> looks like</h2>
+  <div class="future-grid">
+    <div class="future-text">
+      <p>Dressage as a discipline carries extraordinary potential — a deep tradition of horse and human communication, of subtlety, of refinement. But that tradition now faces a reckoning with what we understand about horse cognition, welfare, and consent.</p>
+      <p>To build the future of dressage, we must be honest about the past. The emerging science of equine behaviour and welfare offers tools to do this — not to tear down the tradition, but to elevate it.</p>
+      <a href="the-future.html" class="btn-secondary" style="margin-top:1rem">Read More</a>
+    </div>
+    <div class="future-pillars">
+      <div class="pillar">
+        <h4><a href="her-mouth.html">Her Mouth, Not Ours</a></h4>
+        <p>The horse's mouth is mucosal tissue, not equipment. What that means for how we ride.</p>
+      </div>
+      <div class="pillar">
+        <h4><a href="aids-and-cues.html">Aids and Cues</a></h4>
+        <p>The difference between what the rider does and what the horse understands.</p>
+      </div>
+      <div class="pillar">
+        <h4><a href="the-day-i-took-the-bit-out.html">The Day I Took the Bit Out</a></h4>
+        <p>A cappuccino, a trail ride, and a realisation about where control really comes from.</p>
+      </div>
+      <div class="pillar">
+        <h4><a href="no-hard-mouth.html">There Is No Such Thing as a Hard Mouth</a></h4>
+        <p>What riders call a hard mouth is neural adaptation. The fix is never a stronger bit.</p>
+      </div>
+      <div class="pillar">
+        <h4><a href="rewriting-the-rules.html">Rewriting the Rules</a></h4>
+        <p>The Dutch federation already permits bitless dressage. The problem has been solved.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="gold-rule"></div>
+
+<!-- BLOG -->
+<section class="resources" id="blog">
+  <span class="section-label">From the Blog</span>
+  <h2 class="section-title">Recent Writing</h2>
+  <div class="resources-grid">
+    <a href="no-hard-mouth.html" class="resource-card">
+      <span class="card-tag">Science</span>
+      <h3>There Is No Such Thing as a Hard Mouth</h3>
+      <p>What riders call hardness is neural adaptation to constant pressure. The fix is never a stronger bit.</p>
+      <span class="card-arrow">&rarr;</span>
+    </a>
+    <a href="the-day-i-took-the-bit-out.html" class="resource-card">
+      <span class="card-tag">Personal Essay</span>
+      <h3>The Day I Took the Bit Out — and Nothing Changed</h3>
+      <p>A trail ride, a cappuccino, and a realisation about where control actually comes from.</p>
+      <span class="card-arrow">&rarr;</span>
+    </a>
+    <a href="when-dressage-changed.html" class="resource-card">
+      <span class="card-tag">Analysis</span>
+      <h3>When Dressage Changed</h3>
+      <p>Tracing the moments when competitive dressage diverged from its classical roots.</p>
+      <span class="card-arrow">&rarr;</span>
+    </a>
+    <a href="the-1850-model.html" class="resource-card">
+      <span class="card-tag">Essay</span>
+      <h3>The 1850 Model of Biological Hierarchy Is Still With Us</h3>
+      <p>Love is not the threat to horsemanship. Unexamined hierarchy is.</p>
+      <span class="card-arrow">&rarr;</span>
+    </a>
+  </div>
+</section>
+
+<div class="gold-rule"></div>
+
+<!-- FOOTER -->
+<footer id="contact">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <h2>Dressage for the Future</h2>
+      <p>A resource for riders, trainers, and thinkers who believe that the future of dressage depends on honest engagement with what horses are, what they need, and what they deserve.</p>
+      <a href="contact.html" class="footer-contact">Get in Touch</a>
+      <br><a href="https://substack.com/@dressageforthefuture" target="_blank" rel="noopener" class="footer-contact" style="margin-top:0.8rem;display:inline-block;">Subscribe on Substack &rarr;</a>
+    </div>
+    <div class="footer-nav">
+      <h4>Navigate</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="how-we-got-here.html">How We Got Here</a></li>
+        <li><a href="the-future.html">The Future</a></li>
+        <li><a href="https://substack.com/@dressageforthefuture" target="_blank" rel="noopener">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2025 Dressage for the Future</span>
+    <span>www.dressageforthefuture.com</span>
+  </div>
+</footer>
+
+</body>
+</html>
