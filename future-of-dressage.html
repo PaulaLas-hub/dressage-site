@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="A manifesto for the reform of competitive dressage — physics, welfare, and the case for no bits in competition.">
+<meta property="og:title" content="The Future of Dressage">
+<meta property="og:description" content="A manifesto for the reform of competitive dressage — physics, welfare, and the case for no bits in competition.">
+<meta property="og:url" content="https://www.dressageforthefuture.com/future-of-dressage.html">
+<meta property="og:type" content="article">
+<link rel="canonical" href="https://www.dressageforthefuture.com/future-of-dressage.html">
+<title>The Future of Dressage | Dressage for the Future</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Cinzel:wght@400;600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#F5F0E8;--cream-dark:#EDE7D9;--forest:#1E3A2B;--forest-mid:#2D5040;--forest-light:#3D6B52;--gold:#B8933A;--gold-light:#D4AB55;--gold-pale:#E8D4A0;--ink:#1A1A18;--ink-soft:#3A3830;--mist:#8A8578;}
+*{margin:0;padding:0;box-sizing:border-box;}html{scroll-behavior:smooth;}
+body{background:var(--cream);color:var(--ink);font-family:'EB Garamond',Georgia,serif;font-size:19px;line-height:1.85;overflow-x:hidden;}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:var(--forest);display:flex;align-items:center;justify-content:space-between;padding:0 3rem;height:62px;border-bottom:2px solid var(--gold);}
+.nav-logo{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:300;letter-spacing:.06em;color:var(--cream);text-decoration:none;white-space:nowrap;flex-shrink:0;}
+.nav-links{display:flex;gap:2rem;list-style:none;align-items:center;margin-left:2rem;}
+.nav-links a{font-family:'Cinzel',serif;font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-pale);text-decoration:none;white-space:nowrap;transition:color .3s;}
+.nav-links a:hover{color:var(--gold-light);}
+.nav-contact{color:var(--gold)!important;border-bottom:1px solid var(--gold);padding-bottom:2px;}
+.nav-dropdown{position:relative;}
+.nav-dropdown-menu{display:none;position:absolute;top:100%;left:0;background:var(--forest);border-top:2px solid var(--gold);min-width:220px;padding:.5rem 0;z-index:200;}
+.nav-dropdown:hover .nav-dropdown-menu{display:block;}
+.nav-dropdown-menu li{list-style:none;}
+.nav-dropdown-menu a{display:block;padding:.6rem 1.2rem;font-family:'Cinzel',serif;font-size:.55rem;letter-spacing:.15em;text-transform:uppercase;color:var(--gold-pale);text-decoration:none;white-space:nowrap;transition:background .2s,color .2s;}
+.nav-dropdown-menu a:hover{background:var(--forest-mid);color:var(--gold-light);}
+.gold-rule{height:1px;background:linear-gradient(to right,transparent,var(--gold),transparent);}
+.article-hero{padding:9rem 8% 4.5rem;background:var(--forest);position:relative;}
+.article-hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(to right,transparent,var(--gold),transparent);}
+.section-label{font-family:'Cinzel',serif;font-size:.58rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:1.2rem;display:block;}
+.article-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2.2rem,5vw,3.8rem);font-weight:300;line-height:1.1;color:var(--cream);max-width:800px;margin-bottom:1rem;}
+.article-subtitle{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-style:italic;color:var(--gold-pale);opacity:.9;max-width:680px;margin-top:.5rem;}
+.article-body{max-width:740px;margin:0 auto;padding:5rem 8%;}
+.article-body p{margin-bottom:1.6rem;color:var(--ink-soft);}
+.article-body h2{font-family:'Cormorant Garamond',serif;font-size:1.9rem;font-weight:300;color:var(--forest);margin:3.5rem 0 1.2rem;line-height:1.2;border-left:2px solid var(--gold);padding-left:1.2rem;}
+.article-body h3{font-family:'Cormorant Garamond',serif;font-size:1.35rem;font-weight:400;color:var(--forest);margin:2.5rem 0 .8rem;}
+.article-body blockquote{border-left:3px solid var(--gold);padding:1rem 1.5rem;margin:2rem 0;background:var(--cream-dark);font-style:italic;color:var(--ink-soft);}
+.pull-quote{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-style:italic;font-weight:300;color:var(--forest);border-top:1px solid var(--gold);border-bottom:1px solid var(--gold);padding:2rem 0;margin:3rem 0;line-height:1.5;}
+.back-link{display:inline-flex;align-items:center;gap:.6rem;font-family:'Cinzel',serif;font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);text-decoration:none;margin-bottom:2.5rem;border-bottom:1px solid transparent;transition:border-color .3s;}
+.back-link:hover{border-bottom-color:var(--gold);}
+.next-prev{background:var(--forest);padding:3rem 8%;display:flex;justify-content:space-between;align-items:center;gap:2rem;flex-wrap:wrap;}
+.np-item{text-decoration:none;}
+.np-label{font-family:'Cinzel',serif;font-size:.5rem;letter-spacing:.2em;text-transform:uppercase;color:var(--mist);display:block;margin-bottom:.4rem;}
+.np-title{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-style:italic;color:var(--gold-pale);display:block;}
+.np-item:hover .np-title{color:var(--gold-light);}
+.np-right{text-align:right;}
+.letter-box{background:var(--forest);color:var(--cream);padding:2rem 2.5rem;margin:2.5rem 0;border-left:3px solid var(--gold);font-family:'EB Garamond',serif;font-size:.95rem;line-height:1.7;}
+.letter-box .letter-label{font-family:'Cinzel',serif;font-size:.5rem;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);margin-bottom:.8rem;display:block;}
+.step-box{background:var(--cream-dark);border-top:3px solid var(--gold);padding:2rem 2.5rem;margin:2rem 0;}
+.step-box h3{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:400;color:var(--forest);margin-bottom:.8rem;}
+footer{background:var(--ink);padding:3.5rem 8% 2.5rem;}
+.footer-inner{display:flex;justify-content:space-between;gap:3rem;flex-wrap:wrap;padding-bottom:2rem;border-bottom:1px solid rgba(184,147,58,.2);margin-bottom:1.5rem;}
+.footer-brand h3{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:300;color:var(--cream);margin-bottom:.5rem;}
+.footer-brand p{font-size:.9rem;color:var(--mist);max-width:360px;line-height:1.6;}
+.footer-nav h4{font-family:'Cinzel',serif;font-size:.55rem;letter-spacing:.2em;color:var(--gold);text-transform:uppercase;margin-bottom:1rem;}
+.footer-nav ul{list-style:none;}
+.footer-nav li{margin-bottom:.5rem;}
+.footer-nav a{font-size:.9rem;color:var(--mist);text-decoration:none;transition:color .3s;}
+.footer-nav a:hover{color:var(--gold-pale);}
+.footer-bottom{display:flex;justify-content:space-between;font-size:.7rem;color:var(--mist);font-family:'Cinzel',serif;letter-spacing:.1em;opacity:.4;flex-wrap:wrap;gap:.5rem;}
+@media(max-width:800px){nav{padding:0 1.5rem;}.nav-links{display:none;}.article-hero{padding:7rem 6% 3rem;}.article-body{padding:3.5rem 6%;}.next-prev{flex-direction:column;gap:1.5rem;}.footer-inner{flex-direction:column;}.footer-bottom{flex-direction:column;}}
+</style>
+</head>
+<body><nav>
+  <a href="index.html" class="nav-logo">Dressage For the Future</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li class="nav-dropdown">
+      <a href="how-we-got-here.html">How We Got Here ▾</a>
+      <ul class="nav-dropdown-menu">
+        <li><a href="current-state-of-affairs.html">Current State of Affairs</a></li>
+      </ul>
+    </li>
+    <li class="nav-dropdown">
+      <a href="future-of-dressage.html">The Future ▾</a>
+      <ul class="nav-dropdown-menu">
+    
+      </ul>
+    </li>
+    <li class="nav-dropdown">
+      <a href="the-book.html">The Book ▾</a>
+      <ul class="nav-dropdown-menu">
+        <li><a href="the-book.html">About the Book</a></li>
+        <li><a href="book-preface.html">Preface</a></li>
+        <li><a href="book-ch1.html">Ch 1 · Before the Contact</a></li>
+        <li><a href="book-ch2.html">Ch 2 · The Great Contradiction</a></li>
+        <li><a href="book-ch3.html">Ch 3 · The Military Machine</a></li>
+        <li><a href="book-ch4.html">Ch 4 · One Hand to Two</a></li>
+        <li><a href="book-ch5.html">Ch 5 · The Kür</a></li>
+        <li><a href="book-ch6.html">Ch 6 · The Silenced Mouth</a></li>
+        <li><a href="book-ch7.html">Ch 7 · Descartes' Horse</a></li>
+        <li><a href="book-ch8.html">Ch 8 · The Physics</a></li>
+        <li><a href="book-ch9.html">Ch 9 · Totilas</a></li>
+        <li><a href="book-ch10.html">Ch 10 · Sjef Janssen</a></li>
+        <li><a href="book-ch11.html">Ch 11 · The Bit Is the System</a></li>
+        <li><a href="book-ch12.html">Ch 12 · The Halter and the Paddock</a></li>
+        <li><a href="book-ch13.html">Ch 13 · What the Dutch Know</a></li>
+        <li><a href="book-ch14.html">Ch 14 · What Institutions Protect</a></li>
+        <li><a href="book-ch15.html">Ch 15 · Hawkeye for Horses</a></li>
+        <li><a href="book-epilogue.html">Epilogue · Leo</a></li>
+      </ul>
+    </li>
+
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html" class="nav-contact">Contact</a></li>
+  </ul>
+</nav>
+<div class="article-hero">
+  <span class="section-label">Manifesto</span>
+  <h1 class="article-title">The Future of Dressage</h1>
+  <p class="article-subtitle">What the sport must become — and the two steps that will get it there</p>
+</div>
+<div class="article-body">
+
+<h2>Look at the Eye</h2>
+<p>There are two photographs you need to see.</p>
+<p>The first is a young warmblood in a double bridle with a noseband so tight the jaw cannot move. The muscles of the face are not soft. The eye is not present. This horse has learned to be somewhere else while its body remains available for use. It is posted on social media as achievement. The rider is proud. The sport calls this correct.</p>
+<p>The second is Leo — a big roan gelding in a halter, moving freely in a paddock outside Canberra, his jaw soft, his eye completely present, his movement through himself and his rider smiling. No noseband. No double bridle. No equipment compensating for a relationship that was never built.</p>
+<p>Everything on this page is the distance between those two photographs.</p>
+
+<div class="pull-quote">The horse in the first photograph is not an outlier. It is Tuesday morning at a thousand yards around the world. It is what normal looks like.</div>
+
+<h2>The Physics Problem Nobody Is Talking About</h2>
+<p>In 1890 James Fillis — the greatest high school rider of his generation — published a precise mechanical analysis of what happens when a horse's nose goes behind the vertical.</p>
+<p>The horse carries 60% of its weight on its forehand at rest. The head and neck — roughly 10% of total body weight — are a lever arm cantilevered forward from the shoulder. When the nose goes behind the vertical, the centre of mass of that assembly shifts forward. The lever arm lengthens. The load on the forehand increases.</p>
+<p>And then Fillis stated something that should have ended the rollkur debate before it started:</p>
+<blockquote>The moment the axis of the head comes behind the perpendicular, the action of the curb is false, because it works from below upwards. Then the horse begins to draw his chin into his breast.</blockquote>
+<p>The bit that is supposed to collect the horse reverses its action when the nose goes behind the vertical. It pushes the chin toward the chest rather than lifting the forehand. The instrument of collection becomes an instrument of further compression.</p>
+<p>Fillis published a photograph of a horse in exactly this position and labelled it a cautionary example of what not to do. That photograph is the standard working position of modern Grand Prix dressage.</p>
+<p>Three independent lines of evidence — classical prescription, Newtonian mechanics, and modern welfare science — converge on the same conclusion. The sport has constructed a judging system that rewards the one head position all three lines of evidence condemn.</p>
+
+<h2>The FEI's Own Contradiction</h2>
+<p>The FEI rules state that the horse should go with its nose slightly in front of the vertical at all times.</p>
+<p>The same rules describe the Give and Retake of the Reins — the movement designed to test self-carriage — as one in which the horse's nose <em>may come slightly in front of the vertical.</em></p>
+<p>If the horse was already in front of the vertical, there is nowhere for it to come to. This movement only makes sense if the horse was, in normal work, behind the vertical — close enough that achieving the stated normal position counts as a notable change worth its own rule.</p>
+<p>The rules simultaneously forbid behind the vertical and describe a reward structure that only makes sense if behind the vertical is the normal state. This contradiction has survived multiple revision cycles. It has not been fixed because fixing it would require acknowledging what it reveals.</p>
+
+<h2>What We Propose</h2>
+
+<div class="step-box">
+<h3>Step One: Allow Bitless Competition — With a Coefficient</h3>
+<p>The Dutch national dressage rules already permit bitless competition up to Small Tour level. Their redefinition of contact is seven words: <em>light contact on the reins with the horse.</em> The judging criteria are unchanged. The scoresheet is unchanged. Only the hardware changes.</p>
+<p>We propose Equestrian Australia adopt the Dutch model immediately — and add a coefficient that rewards bitless presentation. A 20% uplift on the final score makes the choice strategically rational, not just philosophically admirable. Within two seasons there is data. Within five, a cultural shift.</p>
+</div>
+
+<div class="step-box">
+<h3>Step Two: AI Scores the Gaits</h3>
+<p>The technology exists right now. Pressure plates, accelerometers, and high-speed video analysis can measure rhythm, regularity, stride ratio, symmetry, and suspension objectively — in real time, without reputation bias or national allegiance.</p>
+<p>AI scores the gaits. The judge scores the horsemanship — the willingness, the expression, the quality of the relationship visible between horse and rider. These are different questions. One has objectively correct answers. The other requires a human witness.</p>
+<p>Separate them. Measure what can be measured. Free the judge to do what only a human judge can do. This is Hawkeye for horses. It did not make tennis less beautiful. It made it more honest.</p>
+</div>
+
+<div class="step-box">
+<h3>Step Three: No Bits in Competition — Ever</h3>
+<p>The maximum equipment in any dressage competition, at any level, is a halter with two reins. The horse competes in a contained arena — the walls prevent it leaving. What happens inside is entirely the product of the relationship horse and rider have built.</p>
+<p>The horse can trot off. It can ignore the rider. It can choose not to collect, not to piaffe, not to stay in the work. The walls contain its body. Nothing contains its will.</p>
+<p>This is the most honest possible test of what was built. It is also the only test that makes the distinction between horsemanship and shopping.</p>
+</div>
+
+<div class="pull-quote">Any person with sufficient money can currently buy a place at the Olympics. Remove the bit and this transaction becomes impossible. You cannot buy self-carriage.</div>
+
+<h2>The Only True Control Is Containment</h2>
+<p>Every other form of control in horsemanship is ultimately a negotiation. The bit controls the mouth — until the horse decides it doesn't. The spur controls impulsion — until the horse shuts down or explodes. Equipment creates the <em>illusion</em> of control.</p>
+<p>The only genuine containment is physical space. And once you accept that, and remove all equipment that creates the illusion, what remains is what was actually built — or wasn't.</p>
+<p>The novice rider seeking to imitate Olympic dressage learns in a neck rope and halter. They cannot use gadgets. They cannot buy shortcuts. They must develop their seat, their weight, their relationship — because those are the only tools available at the top of the sport they are training toward.</p>
+<p>This changes training culture from the ground up. The rider who learns to half-halt through their seat before they ever pick up a rein will be a fundamentally different rider from the one who learns to half-halt by pulling. One is learning horsemanship. The other is learning management.</p>
+
+<h2>What the Dutch Already Know</h2>
+<p>The KNHS — the Dutch national federation — already permits bitless dressage competition. Their key redefinition of contact reads: <em>contact means light rein contact with the horse.</em> Seven words. The judging criteria unchanged. The scoresheet unchanged. The training scale intact.</p>
+<p>One FEI member nation has already solved this. The argument that bitless competition requires a complete rewriting of dressage's judging framework is false. The Dutch proved it with one sentence in one rule.</p>
+<p>The gap is incentive. Add the coefficient and the door opens. Equestrian Australia can do this without waiting for the FEI. Australia can be the second nation to prove it works — and the first to provide the data that takes it to the international stage.</p>
+
+<h2>What This Asks of the Sport</h2>
+<p>It asks dressage to decide what it is.</p>
+<p>A performance art judged on spectacle — the chrome, the power, the extravagant movement of horses bred and managed for maximum visual impact — is one thing. It does not need the language of horsemanship to justify itself.</p>
+<p>A discipline dedicated to genuine partnership between horse and rider — earning rather than extracting cooperation, building physical capacity over years, producing movement that is beautiful because it is willing — is another thing. It is what the sport claims to be. It is not what the sport currently rewards.</p>
+<p>The halter and the sensor together do what forty years of classical criticism could not: they make it impossible to fake horsemanship and call it dressage.</p>
+
+<div class="pull-quote">Measure what can be measured. Judge what must be judged. Reward what actually deserves rewarding.</div>
+
+<p><em>Paula Lasersohn | dressageforthefuture.com | Canberra, Australia</em></p>
+<p><em>Read the full argument in <a href="the-book.html" style="color:var(--forest);text-decoration:underline;">The Silenced Horse</a>.</em></p>
+
+</div>
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <h3>Dressage for the Future</h3>
+      <p>A resource for riders, trainers, and thinkers who believe that the future of dressage depends on honest engagement with what horses are, what they need, and what they deserve.</p>
+    </div>
+    <nav class="footer-nav">
+      <h4>Navigate</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="how-we-got-here.html">How We Got Here</a></li>
+        <li><a href="the-future.html">The Future</a></li>
+        <li><a href="the-book.html">The Book</a></li>
+    
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Dressage for the Future</span>
+    <span>www.dressageforthefuture.com</span>
+  </div>
+</footer></body></html>
